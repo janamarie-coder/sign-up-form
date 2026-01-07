@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red: #ff7a7a;
+  --green: #38cc8c;
+  --purple: #6055a5;
+  --grey: #86868a;
+  --lavender: #b9b6d3;
+  --white: #ffffff;
+  --font: Poppins;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-image: url("https://assets.codepen.io/t-15440/itp-w11-signup-bg-desktop.png");
+  background-color: var(--red);
+  font-family: var(--font), sans-serif;
+}
+
+h1,
+p,
+button {
+  color: var(--white);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.everything {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20 px;
+}
+
+.info-container {
+  margin: 40% 2rem 2rem 4rem;
+}
+
+.trails {
+  margin: 40% 2rem 2rem 4rem;
+}
+
+.form-container {
+  background-color: var(--white);
+  border-radius: 10px;
+  background: white;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.button1 {
+  background-color: var(--purple);
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: none;
+  font-weight: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.button2 {
+  background-color: var(--green);
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  gap: 20px;
+  border: 1.5px solid var(--grey);
+}
+
+input:hover {
+  border-color: var(--purple);
+}
+
+input:focus {
+  font-weight: bold;
+  color: var(--grey);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.grey {
+  color: var(--lavender);
+  font-size: 0.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: bold;
+}
+
+@media (max-width: 780px) {
+  .everything {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+  .info-container {
+    margin: 0;
+    text-align: center;
+  }
+  .trails {
+    margin: 0;
+  }
+}

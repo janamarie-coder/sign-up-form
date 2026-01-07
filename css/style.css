@@ -18,7 +18,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-image: url("https://assets.codepen.io/t-15440/itp-w11-signup-bg-desktop.png");
+  background-image: url(../images:/itp-w11-signup-bg-desktop.webp);
   background-color: var(--red);
   font-family: var(--font), sans-serif;
 }
